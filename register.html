@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Register | T-Cell Tutoring</title>
+    	<link rel="stylesheet" type="text/css" href="registerStyles.css">
+    	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,30
+    	0;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family-Montserrat:
+    	wght@700;800;900&display=swap"rel="stylesheet">
+</head>
+<body class="background">
+	<div>
+	        <nav>
+            	<h2 class="logo"><a style="text-decoration:none; color:white" href="index.html">T-CELL TUTORING</a></h2>
+            	<ul>
+                	<li><a href="register.html">Register!</a></li>
+                	<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfGf221wu3JK7AaW9hDeFdtLw9Jmo6o6yz9mIIRnaa4ytPPTg/viewform">Apply</a></li>
+                	<li><a href="#end">Contact Us</a></li>
+			<li><a href="aboutus.html">Meet the Team</a></li>
+            	</ul>
+            	<button type="joinButton">Donate!</button>
+        	</nav>
+	<div>
+
+<section>
+<form id="my-form" method = "POST" action="https://script.google.com/macros/s/AKfycbzNTdyzZ98_37PZ6xZ6A55AD7M4c8zh-I2xXNnVlQlpMfX8kH3B6mMuKX4Z2n_7zW06/exec">
+<h1 class = "title"> Register to get you or your child Tutored </h1>
+<br>
+
+  <label class="labelText" for="Name">Name:</label>
+  <input class="labelBox" name="Name" type="text" placeholder="Name" required>
+<br>
+
+  <label class="labelText" for="Email">Email:</label>
+  <input class="labelBox" name="Email" type="email" placeholder="Email" required>
+<br>
+
+  <label class="labelText" for="PhoneNo">Phone Number:</label>
+  <input class="labelBox" name="Phone Number" type="tel" placeholder="Phone Number" required>
+<br>
+
+  <label class="labelText" for="Subject">Subject(s):<label>
+  <input class="labelBox" name="Subject(s)" type="text" placeholder="Subject" required>
+<br>
+
+  <label class="labelText" for="Comments">Comments:</label>
+  <input class="labelBox" name="Comments" type="text" placeholder="Comments">
+<br>
+
+
+  <button style="margin:20px" type="submit" onclick= " window.location.href = #" >Send</button>
+
+
+<script>
+	window.addEventListener("load", function() {
+  	const form = document.getElementById('my-form');
+  	form.addEventListener("submit", function(e) {
+    		e.preventDefault();
+    		const data = new FormData(form);
+    		const action = e.target.action;
+    		fetch(action, {
+      			method: "POST",
+      			body: data,
+    		})
+    		.then(() => {
+      			alert("Thank you for registering, we will reach out with further details soon");
+    		})
+  	});
+	});
+</script>
+
+</form>
+</section>
+
+<div class="contact_us">
+	<h1 class="contactText"> Contact Us! </h1>
+	<h3 class ="contactText"> Email: tcelltutoring@gmail.com </h3>
+	<h3 class="contactText"> Instagram: tcelltutoring </h3>
+	<h5 class="contactText"> Website made by Rani Halder & Zeeshan Shariff </h5>
+	<a name="end"> </a>
+</div>
+
+
+<body>
+</html>
