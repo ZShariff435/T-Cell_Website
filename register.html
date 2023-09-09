@@ -40,7 +40,7 @@
 <br>
 
   <label class="labelText" for="Subject">Subject(s):<label>
-  <input class="labelBox" name="Subject(s)" type="text" placeholder="Subject" required>
+  <input class="labelBox" name="Subject(s)" type="text" placeholder="Subject">
 <br>
 
   <label class="labelText" for="Comments">Comments:</label>
@@ -64,6 +64,7 @@
     		})
     		.then(() => {
       			alert("Thank you for registering, we will reach out with further details soon");
+			form.reset();
     		})
   	});
 	});
