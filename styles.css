@@ -152,7 +152,7 @@ button:hover{
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
-    top: 60px;
+    top: 40px
 }
 
 .card{
@@ -254,8 +254,9 @@ form{
 
 .cardTeam{
     width: 250px;
-    margin: 50px; 
+    margin: 60px;
     border-radius: 15px;
+    float: left
 }
 
 .card_imgTeam{
@@ -263,7 +264,11 @@ form{
     margin-bottom: 20px;
     background-size: cover;
     border-radius: 15px 15px 0px 0;
-    object-fit: cover
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: left
 }
 
 .cardTeam h2{
